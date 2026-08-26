@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CarPay - Car Installments Calculator</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container calculator-box">
+
+    <div class="text-center mb-5">
+        <div class="logo mb-3"><span class="logo-mark">CP</span> CarPay</div>
+        <h1 class="display-5 text-primary">Car Installments Calculator</h1>
+        <p class="text-secondary">Calculate your estimated monthly car installment</p>
+    </div>
+
+    <div class="card shadow-sm p-4">
+        <h2 class="mb-4">Car Information</h2>
+
+        <form>
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+                    <label for="carType" class="form-label">Car Type</label>
+                    <input type="text" id="carType" class="form-control" placeholder="Example: Sedan">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="carModel" class="form-label">Car Model</label>
+                    <input type="text" id="carModel" class="form-control" placeholder="Example: Toyota Corolla">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="carPrice" class="form-label">Car Price</label>
+                    <input type="number" id="carPrice" class="form-control" placeholder="Enter car price">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="downPayment" class="form-label">Down Payment</label>
+                    <input type="number" id="downPayment" class="form-control" placeholder="Enter down payment">
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <label for="duration" class="form-label">Installment Duration</label>
+                    <select id="duration" class="form-select">
+                        <option>1 Year</option>
+                        <option>2 Years</option>
+                        <option>3 Years</option>
+                        <option>4 Years</option>
+                        <option>5 Years</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">Calculate Installment</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6 mb-3">
+            <div class="card result-box shadow-sm p-4 text-center">
+                <h5 class="text-secondary">Monthly Installment</h5>
+                <h2 class="text-success">0 EGP</h2>
+                <p class="text-secondary mb-0">Calculation result</p>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <div class="card result-box shadow-sm p-4 text-center">
+                <h5 class="text-secondary">Interest Rate</h5>
+                <h2 class="text-warning">10%</h2>
+                <p class="text-secondary mb-0">Estimated interest rate</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4 text-secondary">
+        <p>CarPay &copy; 2026 - Car Installments Calculator</p>
+    </div>
+</div>
+
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

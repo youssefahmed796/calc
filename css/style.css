@@ -1,0 +1,6 @@
+
+body { background-color:#f5f7fb; font-family:Arial,sans-serif; }
+.logo { font-size:28px; font-weight:bold; }
+.logo-mark { display:inline-block; width:44px; height:44px; line-height:44px; text-align:center; border-radius:10px; background:#0d6efd; color:white; font-weight:bold; }
+.calculator-box { max-width:850px; margin:60px auto; }
+.result-box { border-radius:12px; }
